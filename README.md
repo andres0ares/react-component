@@ -10,6 +10,9 @@ O nome deve ser exibido pelo componente centralizado na vertical e na horizontal
 
 Você pode visualizar o componente aqui: https://componente-react.oandre.com/
 
+O código do componente está do arquivo:
+./src/components/ExibeNomes.js
+
 ## Scripts disponíveis
 
 No diretório do projeto, você pode executar:
