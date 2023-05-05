@@ -1,26 +1,19 @@
-import logo from './assets/logo.svg';
-import './styles/App.css';
-import HelloWorld from './components/HelloWorld';
+//importa componente
+import ExibeNomes from './components/ExibeNomes';
 
 function App() {
+
+  // JSON com nomes e notas
+  const data = [
+    { "nome": "José Alves Dos Santos", "nota": 37 },
+    { "nome": "Anderson Da Silva", "nota": 49 }, 
+    { "nome": "Maria Ferreira", "nota": 68 },
+    { "nome": "Ana Oliveira", "nota": 87 }
+  ];
+
+  //Exibe componente e passa a constante 'data' como propriedade
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <HelloWorld />
-    </div>
+    <ExibeNomes notas={data} />
   );
 }
 
